@@ -4,6 +4,7 @@ import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline";
 import Toolbar from "./Toolbar";
+import FontFamily from "@tiptap/extension-font-family";
 
 const Tiptap = ({
   description,
@@ -14,14 +15,17 @@ const Tiptap = ({
 }) => {
   const editor = useEditor({
     extensions: [
-      StarterKit.configure({}),
+      StarterKit,
       Heading.configure({
         HTMLAttributes: {
           class: "text-2xl font-semibold",
           levels: [2],
         },
       }),
-      Underline.configure({}),
+      Underline,
+      FontFamily.configure({
+        types: ["textStyle"],
+      }),
     ],
     content: description,
     editorProps: {
