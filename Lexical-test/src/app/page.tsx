@@ -1,12 +1,12 @@
-import LexicalEditorWrapper from "@/components/lexical-editor-wrapper";
+import LexicalEditorWrapper from "@/components/lexical-editor/LexicalEditorWrapper";
 import React from "react";
 
-const Home = () => {
+export default function Home() {
   return (
-    <main className="p-10 relative">
-      <LexicalEditorWrapper />
+    <main className="p-10 bg-secondary min-h-screen w-full">
+      <div className="relative">
+        <LexicalEditorWrapper />
+      </div>
     </main>
   );
-};
-
-export default Home;
+}

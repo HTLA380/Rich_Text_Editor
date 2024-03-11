@@ -3,8 +3,8 @@ export const theme = {
     bold: "font-bold",
     italic: "italic",
     underline: "underline",
-    code: "bg-gray-200 border border-gray-800 text-gray-800 rounded-md px-1.5 py-0.5",
-    highlight: "bg-gray-200 px-0.5",
+    code: "bg-gray-300 p-1 text-sm",
+    highlight: "bg-yellow-300",
     strikethrough: "line-through",
     subscript: "align-sub",
     superscript: "align-super",
@@ -16,5 +16,4 @@ export const theme = {
     h4: "text-2xl",
     h5: "text-xl",
   },
-  banner: "border-left border-left-red-300 bg-gray-200 rounded-md py-2",
 };
