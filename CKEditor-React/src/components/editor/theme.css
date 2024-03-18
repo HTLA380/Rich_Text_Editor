@@ -1,0 +1,25 @@
+.ck-toolbar__items {
+  justify-content: center;
+}
+
+.ck-content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 4rem auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem !important;
+  min-height: 40vh;
+}
+
+.ck-content h2 {
+  font-size: 1.5rem;
+}
+
+.ck-content h3 {
+  font-size: 1.25rem;
+}
+
+.ck-content h4 {
+  font-size: 1.1rem;
+}
