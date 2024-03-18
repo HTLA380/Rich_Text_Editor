@@ -1,5 +1,5 @@
 export const exampleHTML = `
-<h2 style="text-align: center">
+    <h2 style="text-align: center">
       <span style="font-family: 'Courier New', Courier, monospace"
         ><strong>This is Awesome!!</strong></span
       >
