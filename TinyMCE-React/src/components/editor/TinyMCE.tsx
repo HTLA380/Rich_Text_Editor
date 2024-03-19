@@ -3,15 +3,6 @@
 import React from "react";
 import { Editor } from "@tinymce/tinymce-react";
 
-const PLUGINS = [
-  "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen textcolor insertdatetime media paste code help wordcount table",
-];
-
-// prettier-ignore
-const TOOLBAR = [
-  "help | undo redo | removeformat selectall | bold italic underline strikethrough link superscript subscript | align outdent indent | fontfamily | fontsize | lineheight | blocks | forecolor | backcolor | image media | table | wordcount | code print | preview",
-];
-
 const TinyMCE = ({ apiKey }: { apiKey: string | undefined }) => {
   if (!apiKey) throw new Error("The api key must be provided");
 
@@ -40,8 +31,10 @@ const TinyMCE = ({ apiKey }: { apiKey: string | undefined }) => {
         },
         height: "100vh",
         menubar: true,
-        plugins: PLUGINS,
-        toolbar: TOOLBAR,
+        plugins:
+          "advlist autolink lists link image charmap print preview anchor searchreplace visualblocks code fullscreen textcolor insertdatetime media paste code help wordcount table",
+        toolbar:
+          "help | undo redo | removeformat selectall | bold italic underline strikethrough link superscript subscript | align outdent indent | fontfamily | fontsize | lineheight | blocks | forecolor | backcolor | image media | table | wordcount | code print | preview",
         textcolor_rows: "4",
       }}
       onEditorChange={handleEditorChange}
