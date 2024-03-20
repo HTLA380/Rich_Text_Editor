@@ -3,16 +3,14 @@
 import React from "react";
 import { Editor } from "@tinymce/tinymce-react";
 
-const TinyMCE = ({ apiKey }: { apiKey: string | undefined }) => {
-  if (!apiKey) throw new Error("The api key must be provided");
-
+const TinyMCE = () => {
   const handleEditorChange = (content: any, editor: any) => {
     console.log("Content was updated:", content);
   };
 
   return (
     <Editor
-      apiKey={apiKey}
+      apiKey={"0gz87w29kgjnzgcp5wojmv88i56ursnpiaf2x7dbdxxb8gmd"}
       initialValue="<p>Tiny MCE</p>"
       init={{
         skin: "snow",

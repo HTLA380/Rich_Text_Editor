@@ -7,7 +7,7 @@ dotenv.config();
 const Home = () => {
   return (
     <div>
-      <TinyMCE apiKey={process.env.TINYMCE_API_KEY} />
+      <TinyMCE />
     </div>
   );
 };
