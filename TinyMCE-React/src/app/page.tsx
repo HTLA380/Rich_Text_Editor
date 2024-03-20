@@ -1,15 +1,8 @@
-import TinyMCE from "@/components/editor/TinyMCE";
+"use client";
+
 import React from "react";
-import dotenv from "dotenv";
+import TinyMCE from "@/components/editor/TinyMCE";
 
-dotenv.config();
-
-const Home = () => {
-  return (
-    <div>
-      <TinyMCE />
-    </div>
-  );
-};
-
-export default Home;
+export default function App() {
+  return <TinyMCE />;
+}
